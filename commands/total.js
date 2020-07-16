@@ -15,6 +15,6 @@ module.exports = {
 			total += item.gCoin;
 		});
 
-		message.channel.send('The total amount of `gCoin` in the system is: ' + total);
+		message.channel.send('The total amount of `gCoin` in the system is: ```' + total + '```');
 	},
 };
