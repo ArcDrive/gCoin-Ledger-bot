@@ -2,7 +2,7 @@ const fs = require('fs');
 
 module.exports = {
 	name: 'balance',
-	description: 'checks the user\'s gCoin',
+	description: 'Checks the user\'s gCoin',
 	aliases: ['bal', 'bank'],
 	usage: '',
 	args: false,
