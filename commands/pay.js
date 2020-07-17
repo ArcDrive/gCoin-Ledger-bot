@@ -8,6 +8,10 @@ module.exports = {
 	execute(message, args) {
 		const payAmount = parseInt(args[1]);
 
+		if (isNaN(payAmount)) {
+			return message.channel.send('`' + args[1] + '` can not be converted to a number. Please enter a numerical value.');
+		}
+
 		let ledgerArray = [];
 		let payer = -1;
 		let receiver = -1;
